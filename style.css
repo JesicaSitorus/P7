@@ -1,0 +1,22 @@
+.bungkus{
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    border: 1px solid;
+    padding-left: 15px;
+    background-image: url(bck.jpg);
+}
+#kal{
+    text-align: center;
+}
+
+#button{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+#operator{
+    width: 175px;
+}
+option{
+    text-align: center;
+}
