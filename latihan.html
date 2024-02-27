@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KALKULATOR SEDERHANA</title>
+</head>
+<body>
+    <div class="bungkus">
+    <h6 id="kal">KALKULATOR SEDERHANA</h6>
+
+    
+    <label for="bilA">Bilangan-A :</label>
+    <input type="number" id="bilA">
+  
+
+    <label for="bilB">Bilangan-B :</label>
+    <input type="number"  id="bilB">
+
+
+        <label for="operator">Operator : </label><br>
+        <input type="button" id="tbh" value="+" onclick="tmbh()">
+
+        
+       
+        <input type="button" id="tbh1" value="-" onclick="krg()">
+
+        
+       
+        <input type="button" id="tbh2" value="*" onclick="kali()">
+
+        <input type="button" id="tbh3" value="/" onclick="bagi()">
+       
+
+
+    <label for="Hasil">Hasil Perhitungan:</label>
+    <input type="text" id="hasil">
+
+    
+</div>
+
+
+<script type="text/javascript">
+        function tmbh(){
+          var nilai1 = document.getElementById("bilA").value;
+          var nilai2 = document.getElementById("bilB").value;
+          var nhasil = "";
+
+          if(nilai1=="" || nilai2=="" ){
+            nhasil ="0";
+          }else{
+            nilai1= parseInt(nilai1);
+            nilai2= parseInt(nilai2);
+            nhasil =nilai1 + nilai2;        
+    }
+    document.getElementById("hasil").value = nhasil;
+}
+
+
+function krg(){
+          var nilai1 = document.getElementById("bilA").value;
+          var nilai2 = document.getElementById("bilB").value;
+          
+          var nhasil = "";
+
+        
+          if(nilai1=="" || nilai2=="" ){
+            nhasil ="0";
+          }else{
+            nilai1= parseInt(nilai1);
+            nilai2= parseInt(nilai2);
+            nhasil =nilai1 - nilai2;        
+    }
+    document.getElementById("hasil").value = nhasil;
+}
+
+
+
+function kali(){
+          var nilai1 = document.getElementById("bilA").value;
+          var nilai2 = document.getElementById("bilB").value;
+      
+          var nhasil = "";
+
+          
+          if(nilai1=="" || nilai2=="" ){
+            nhasil ="0";
+          }else{
+            nilai1= parseInt(nilai1);
+            nilai2= parseInt(nilai2);
+            nhasil =nilai1 * nilai2;        
+    }
+    document.getElementById("hasil").value = nhasil;
+}
+
+
+function bagi(){
+          var nilai1 = document.getElementById("bilA").value;
+          var nilai2 = document.getElementById("bilB").value;
+          var nhasil = "";
+
+         
+          if(nilai1=="" || nilai2=="" ){
+            nhasil ="0";
+          }else{
+            nilai1= parseInt(nilai1);
+            nilai2= parseInt(nilai2);
+            nhasil =nilai1 / nilai2;        
+    }
+    document.getElementById("hasil").value = nhasil;
+}
+
+</script>
+</body>
+</html>
